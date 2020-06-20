@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JS code challenge</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="app">
+        <div class="container">
+            <div class="top">
+                <h1>HTML Form Generator</h1>
+                <button id="generate">Generate →</button>
+            </div>
+            <div class="columns">
+                <textarea id="formatted" class="column">p:Login
+hr
+
+input[type="text", placeholder="Full name"]
+input[type="number", placeholder="Age"]
+
+p:Enter a custom message:
+textarea[placeholder="Message"]
+br
+
+button[onclick="alert(\"Hi 'yourself'\")"]:Say hi
+
+hr
+summary
+hr
+
+submit</textarea>
+                <div id="generated" class="column"></div>
+            </div>
+        </div>
+    </div>
+    <script src="solution.js"></script>
+</body>
+</html>
