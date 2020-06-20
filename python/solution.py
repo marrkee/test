@@ -1,6 +1,5 @@
 def visible_area(mountains):
-    landscape = \
-        [0] * (max([right_side['right'] for right_side in mountains]) + 1)
+    landscape = [0] * (max([rights['right'] for rights in mountains]) + 1)
     for i in mountains:
         if i['height'] > landscape[int((i['right']+i['left'])/2)]:
             landscape[int((i['right']+i['left'])/2)] = i['height']
