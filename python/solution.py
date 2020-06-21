@@ -8,11 +8,9 @@ def visible_area(mountains):
             for j in enumerate(landscape, start=0):
                 if landscape[j[0]] - abs(i[0]-j[0]) > landscape[i[0]]:
                     landscape[i[0]] = landscape[j[0]] - abs(i[0]-j[0])
-
     sum = 0
-
     for i in enumerate(landscape[:-1], start=0):
         sum += (landscape[i[0]] + landscape[i[0] + 1])/2
-        if landscape[i[0]] == landscape[i[0] + 1]:
+        if landscape[i[0]] == landscape[i[0] + 1] and landscape[i[0]] != 0:
             sum -= 0.25
     return sum
